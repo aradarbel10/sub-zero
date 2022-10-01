@@ -1,0 +1,35 @@
+cabal-version:      2.4
+name:               sub-zero
+version:            0.1.0.0
+synopsis:           compiler frontend with a pluggable subtype system
+
+-- A longer description of the package.
+-- description:
+homepage:
+
+-- A URL where users can report bugs.
+-- bug-reports:
+license:            BSD-3-Clause
+license-file:       LICENSE
+author:             aradarbel10
+maintainer:         aradarbel10@gmail.com
+
+-- A copyright notice.
+-- copyright:
+category:           Language
+extra-source-files: CHANGELOG.md
+
+executable sub-zero
+    main-is:          Main.hs
+
+    -- Modules included in this executable, other than Main.
+    -- other-modules:
+
+    -- LANGUAGE extensions used by modules in this package.
+    -- other-extensions:
+    build-depends:    base ^>=4.14.3.0
+                    , transformers
+                    , containers
+                    , mtl
+    hs-source-dirs:   app
+    default-language: Haskell2010

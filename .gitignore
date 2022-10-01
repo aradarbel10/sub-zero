@@ -1,0 +1,130 @@
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@aradarbel10 
+haskell
+/
+cabal
+Public
+Code
+Issues
+1.3k
+Pull requests
+78
+Actions
+Projects
+7
+Wiki
+Security
+Insights
+cabal/.gitignore
+@jneira
+jneira Ignore windows test artifacts
+Latest commit 1d3f430 on Mar 6
+ History
+ 19 contributors
+@ezyang@phadej@23Skidoo@ttuegel@pcapriotti@bos@sopvop@robx@snoyberg@bubba@tibbe@iustin
+84 lines (66 sloc)  972 Bytes
+
+.cabal-sandbox/
+cabal.sandbox.config
+cabal.project.local
+.ghc.environment.*
+cabal-dev/
+.hpc/
+*.hi
+*.o
+*.p_hi
+*.prof
+*.tix
+dist
+dist-*
+register.sh
+./cabal.config
+cabal-tests.log
+bootstrap/*.plan.json
+
+/Cabal/dist/
+/Cabal/tests/Setup
+/Cabal/Setup
+/Cabal/source-file-list
+
+/cabal-install/dist/
+/cabal-install/Setup
+/cabal-install/source-file-list
+
+.stylish-haskell.yaml
+.stylish-haskell.yml
+.ghci
+.ghcid
+
+# Output of release and bootstrap
+_build
+
+# editor temp files
+
+*#
+.#*
+*~
+.*.swp
+*.bak
+
+# GHC build
+
+Cabal/GNUmakefile
+Cabal/dist-boot/
+Cabal/dist-install/
+Cabal/ghc.mk
+
+
+# TAGS files
+TAGS
+tags
+ctags
+
+# stack artifacts
+/.stack-work/
+stack.yaml.lock
+
+# Shake artifacts
+.shake*
+progress.txt
+
+# test files
+register.sh
+
+# windows test artifacts
+cabal-testsuite/**/*.exe
+cabal-testsuite/**/*.bat
+
+# python artifacts from documentation builds
+*.pyc
+.python-sphinx-virtualenv/
+/doc/.skjold_cache/
+
+# macOS folder metadata
+.DS_Store
+
+# benchmarks
+bench.html
+
+# Emacs
+.projectile
+Footer
+© 2022 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
