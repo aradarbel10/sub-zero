@@ -23,7 +23,9 @@ executable sub-zero
     main-is:          Main.hs
 
     -- Modules included in this executable, other than Main.
-    -- other-modules:
+    other-modules:    Surface.AST , Surface.Parse
+                    , Core.AST , Core.Pretty , Core.Reduce
+                    , Typing.Syntax , Typing.TCM , Typing.Typecheck , Typing.Coalesce
 
     -- LANGUAGE extensions used by modules in this package.
     -- other-extensions:
@@ -31,5 +33,6 @@ executable sub-zero
                     , transformers
                     , containers
                     , mtl
+                    , parsec , indents
     hs-source-dirs:   app
     default-language: Haskell2010
