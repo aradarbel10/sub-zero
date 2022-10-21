@@ -1,14 +1,14 @@
 cabal-version:      2.4
 name:               sub-zero
 version:            0.1.0.0
-synopsis:           compiler frontend with a pluggable subtype system
+synopsis:           a research language focusing on subtype checking
 
 -- A longer description of the package.
--- description:
-homepage:
+description:        SubZero is a compiler frontend created to explore implementation of subtype checking & subtype inference in the presence of various interacting language features.
+homepage:           https://github.com/aradarbel10/sub-zero.git
 
 -- A URL where users can report bugs.
--- bug-reports:
+bug-reports:        https://github.com/aradarbel10/sub-zero/issues
 license:            BSD-3-Clause
 license-file:       LICENSE
 author:             aradarbel10
